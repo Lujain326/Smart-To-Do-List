@@ -1,97 +1,100 @@
-🚀  Smart To-Do List
+# 🚀 Smart To-Do List
 
-NextUp is a desktop task management application built with C++, Qt 6, and custom Data Structures. It helps users organize tasks using a priority-based system, making sure the most important tasks are completed first.
+A task management application built using **C++**, **Qt 6**, and custom **Data Structures**. The system helps users organize tasks efficiently using a priority-based approach, ensuring that the most important tasks are completed first.
 
-This project was developed as a Data Structures course project to demonstrate the practical use of linked lists, priority queues, stacks, and file handling in a real-world application.
+This project was developed as part of a Data Structures course to demonstrate the practical implementation of linked lists, priority queues, stacks, and file handling in a real-world application.
 
-✨ Features
-➕ Add new tasks with priorities
-⭐ Automatic priority-based task management
-✅ Complete the highest-priority task
-↩️ Undo completed tasks
-📋 Display all tasks
-🔄 Sort tasks by priority
-💾 Save tasks for future sessions
-🖥️ Clean and modern Qt GUI
-🛠️ Data Structures Used
+---
 
-This project was intentionally built without relying on STL containers for its core functionality.
+## ✨ Features
 
-Data Structure	Purpose
-Priority Queue	Always retrieves the highest-priority task first
-Linked List	Stores and manages task information
-Stack	Supports the Undo feature
-File Handling	Saves and loads tasks between sessions
-🖥️ Technologies
-C++
-Qt 6
-CMake
-Data structure
-📁 Project Structure
-NextUp/
-│
+* Add new tasks with priorities
+* View all tasks
+* Complete the highest-priority task
+* Undo completed tasks
+* Sort tasks by priority
+* Search for tasks
+* Save and load tasks automatically
+* User-friendly graphical interface built with Qt
+
+---
+
+## 🛠️ Data Structures Used
+
+| Data Structure | Purpose                           |
+| -------------- | --------------------------------- |
+| Priority Queue | Retrieves tasks based on priority |
+| Linked List    | Stores and manages tasks          |
+| Stack          | Supports the Undo feature         |
+| File Handling  | Saves and loads task data         |
+
+---
+
+## 💻 Technologies Used
+
+* C++
+* Qt 6
+* CMake
+* Object-Oriented Programming (OOP)
+
+---
+
+## 📁 Project Structure
+
+```text
 ├── main.cpp
 ├── mainwindow.cpp
 ├── mainwindow.h
 ├── mainwindow.ui
-│
+├── Task.h
 ├── PriorityQueue.h
 ├── PriorityQueue.cpp
-│
 ├── LinkedList.h
 ├── LinkedList.cpp
-│
 ├── Stack.h
 ├── Stack.cpp
-│
 ├── FileManager.h
 ├── FileManager.cpp
-│
-├── Task.h
-├── Colors.h
-│
-├── logo.ico
-└── CMakeLists.txt
-⚙️ How It Works
-The user adds tasks and assigns priorities.
-Tasks are stored in the linked list.
-The priority queue determines which task should be completed first.
-Completed tasks are pushed onto a stack.
-The Undo operation restores the most recently completed task.
-Tasks are automatically saved and loaded using file handling.
-🚀 Getting Started
-Prerequisites
-Qt 6.5 or later
-CMake 3.19+
-C++17 compatible compiler
-Build
-git clone https://github.com/your-username/NextUp.git
+├── CMakeLists.txt
+└── Resources
+```
 
-cd NextUp
+---
 
-mkdir build
-cd build
+## ⚙️ How It Works
 
-cmake ..
-cmake --build .
+1. Users add tasks and assign priorities.
+2. Tasks are stored and managed using a linked list.
+3. The priority queue ensures that higher-priority tasks are processed first.
+4. Completed tasks are stored in a stack to support the Undo operation.
+5. Task data is saved and loaded using file handling for persistence between sessions.
 
-Open the generated project in Qt Creator or your preferred IDE and run the application.
+---
 
-📚 Concepts Demonstrated
-Object-Oriented Programming
-Custom Data Structures
-Priority Scheduling
-File Persistence
-GUI Development with Qt
-CMake Project Configuration
-🎯 Learning Objectives
+## 📚 Concepts Demonstrated
 
-This project demonstrates how classic data structures can be integrated into a practical desktop application instead of being implemented only as standalone algorithms.
+* Data Structures
+* Object-Oriented Programming
+* Priority Scheduling
+* File Persistence
+* GUI Development with Qt
+* Software Design and Implementation
 
-👥 Authors
+---
+
+## 🎯 Learning Objectives
+
+The goal of this project is to demonstrate how fundamental data structures can be combined to build a practical and efficient task management application.
+
+---
+
+## 👥 Authors
 
 Developed as a university Data Structures project.
 
-📄 License
+---
 
-This project is intended for educational purposes.
+## 📄 License
+
+This project is intended for educational purposes only.
+
